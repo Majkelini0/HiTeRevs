@@ -1,0 +1,5 @@
+Add connection string to your MongoDB database
+
+1. Open .env file
+2. Locate "MONGODB_CONNECTION_STRING="
+3. Add your connection string

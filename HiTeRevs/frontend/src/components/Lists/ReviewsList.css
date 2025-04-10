@@ -1,0 +1,67 @@
+﻿.reviews-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.reviews-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px;
+    width: 100%;
+}
+.reviews-list li{
+    list-style: none;
+    background-color: light-dark(var(--light-mid), var(--dark));
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.3em;
+    box-shadow: 0 4px 4px light-dark(var(--light-mid), var(--dark-mid));
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews-list a{
+    color: light-dark(var(--light-bg), var(--dark-font));
+}
+.reviews-list p{
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: light-dark(var(--light-font), var(--dark-deep));
+}
+.reviews-list li:hover {
+    background-color: light-dark(var(--light-deep), var(--light-deep));
+}
+.reviews-list li:focus {
+    background-color: light-dark(var(--light-deep), var(--light-mid));
+    outline: none;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+#default-button {
+    background-color: light-dark(var(--light-mid), var(--light-deep));
+    color: light-dark(var(--light-font), var(--dark-font));
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#default-button:hover {
+    background-color: light-dark(var(--light-deep), var(--dark));
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+#default-button:focus {
+    background-color: light-dark(var(--dark), var(--dark-mid));
+}

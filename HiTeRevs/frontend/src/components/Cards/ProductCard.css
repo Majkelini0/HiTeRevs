@@ -1,0 +1,22 @@
+﻿.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 400px;
+    background-color: light-dark(var(--light), var(--dark-mid));
+    padding: 50px;
+    border-radius: 25px;
+}
+.product-info button{
+    background-color: light-dark(var(--light), var(--dark-deep));
+}
+
+.button-border{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: light-dark(var(--light-mid), var(--dark-deep));
+}
+.product-info h1{
+    margin: 0px;
+}

@@ -1,0 +1,7 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+    margin-top: 0px;
+}

@@ -1,0 +1,1 @@
+﻿npm i oracledb mongodb bcrypt jsonwebtoken dotenv cors swagger-autogen swagger-ui-express nodemon

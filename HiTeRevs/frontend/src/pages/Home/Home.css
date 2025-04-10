@@ -1,0 +1,65 @@
+﻿.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tiles li {
+    background-color: light-dark(var(--light), var(--dark));
+    color: light-dark(var(--light-font), var(--dark-font));
+    aspect-ratio: 5 / 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 0px; /* Space between title and year */
+}
+
+.product-year {
+    font-size: 0.9em; /* Slightly smaller font size for year */
+}
+
+.tiles li:hover {
+    background-color: light-dark(var(--light-mid), var(--dark-mid));
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.tiles li:focus {
+    background-color: light-dark(var(--light-deep), var(--dark-deep));
+    outline: none;
+    transition: 0.3s;
+}
+
+.info-container{
+    font-size: 1.3em;
+    margin: 30px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}

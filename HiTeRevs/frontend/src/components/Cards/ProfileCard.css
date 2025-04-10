@@ -1,0 +1,19 @@
+﻿.profile-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    min-width: 40px;
+    font-size: 1.5em;
+    background-color: light-dark(var(--light), var(--dark-deep));
+    border-radius: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}

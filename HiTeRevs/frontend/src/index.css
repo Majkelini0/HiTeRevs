@@ -1,0 +1,119 @@
+body{
+    color-scheme: light dark;
+    background-color: light-dark(var(--light-bg), var(--dark-bg));
+    color: light-dark(var(--light-font), var(--dark-font));
+
+    --dark-bg: #2c3333;
+    --dark-deep: #2e4f4f;
+    --dark-mid: #0a6063;
+    --dark: #0e8388;
+    --dark-font: #cbe4de;
+
+    --light-bg: #faf9f9;
+    --light: #add2c9;
+    --light-mid: #8db8ae;
+    --light-deep: #5ea3a3;
+    --light-font: #488b8f;
+}
+
+body.light {
+    color-scheme: light;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+body.dark {
+    color-scheme: dark;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: light-dark(var(--light-font), var(--dark-font));
+}
+
+.default-button {
+    background-color: light-dark(var(--light), var(--dark-deep));
+    color: light-dark(var(--light-font), var(--dark-font));
+    max-width: 100px;
+    max-height: 50px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /*transition: background-color 0.3s;*/
+    transition: 0.3s;
+}
+.default-button:hover {
+    background-color: light-dark(var(--light-mid), var(--dark-mid));
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+.default-button:focus {
+    background-color: light-dark(var(--light-deep), var(--dark));
+}
+
+#delete-account-button{
+    background-color: rgb(225, 0, 0);
+    color: white;
+    max-width: 110px;
+    max-height: 50px;
+    padding: 10px;
+    margin-top: 25px;
+}
+#delete-account-button:hover{
+    background-color: rgb(150, 0, 0);
+}
+#delete-account-button:focus{
+    background-color: rgb(100, 0, 0);
+}
+#add-review-button{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.basic-inputs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 3%;
+}
+.basic-inputs-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.basic-input {
+    font-size: 1em;
+    height: 25px;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px light-dark(var(--light-mid), var(--dark-mid));
+    transition: 0.3s;
+}
+.basic-input:hover{
+    box-shadow: 0px 6px 0px 0px light-dark(var(--light-deep), var(--dark));
+    transition: 0.3s;
+}
+.basic-input:focus{
+    outline: none;
+    font-size: 1.2em;
+    border-style: none;
+    box-shadow: 0px 8px 0px 0px light-dark(var(--light-deep), var(--dark));
+    transition: 0.3s;
+}
+#review-textarea {
+    min-height: 200px;
+    font-size: 1.2em;
+}
+#review-textarea:focus {
+    tranform: scale(1.5);
+}
+

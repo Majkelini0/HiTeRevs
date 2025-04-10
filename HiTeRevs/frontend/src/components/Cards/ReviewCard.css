@@ -1,0 +1,25 @@
+﻿.review-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    border-radius: 25px;
+    padding: 50px;
+    background-color: light-dark(var(--light), var(--dark-deep));
+}
+
+.review-card p{
+    font-size: 1.5rem;
+    color: light-dark(var(--light-deep), var(--dark));
+    margin: 10px;
+    padding: 0;
+}
+.review-card h1{
+    margin: 10px;
+    padding: 0;
+}
+.review-card h2{
+    margin: 10px;
+    padding: 0;
+}
